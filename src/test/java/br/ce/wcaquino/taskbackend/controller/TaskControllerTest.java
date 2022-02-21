@@ -71,7 +71,7 @@ public class TaskControllerTest {
 		Mockito.when(taskRepoMock.save(Mockito.any())).thenReturn(task);
 		
 		ResponseEntity<Task> retorno = taskControllerMock.save(task);
-		assertThat(retorno.getBody().getTask(), CoreMatchers.is("testes"));
+		assertThat(retorno.getBody().getTask(), CoreMatchers.is("teste"));
 		
 	}
 
